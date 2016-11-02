@@ -1,12 +1,15 @@
 var arr = [];
-var count = null;
-var alpha = '123asdАБСABC';
+var count = 0;
+var alpha = 'asdАБСABC';
+var elem = 0;
 do {
-    var elem = prompt('Введите число', '');
+    elem = prompt('Введите число', '');
     count++;
     arr.push(elem);
-} while ((elem != '' || elem != undefined));
+} while (elem != '');
 
-for (var i = 0; i < count-1; i++) {
+if (elem == '') {
+    for (var i = 0; i < count; i++) {
 
+    }
 }

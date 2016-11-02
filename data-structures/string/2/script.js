@@ -1,9 +1,9 @@
 function checkSpam(str) {
-    if (str.indexOf('viagra') || str.indexOf('xxx')) {
+    str = str.toLowerCase();
+    if (str.indexOf('viagra') != -1 || str.indexOf('xxx') != -1) {
         return true;
-    } else {
-        return false;
     }
+        return false;
 
 }
 
