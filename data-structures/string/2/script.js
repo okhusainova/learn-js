@@ -3,7 +3,7 @@ function checkSpam(str) {
     if (str.indexOf('viagra') != -1 || str.indexOf('xxx') != -1) {
         return true;
     }
-        return false;
+    return false;
 
 }
 
