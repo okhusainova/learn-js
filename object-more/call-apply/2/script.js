@@ -1,9 +1,9 @@
 function applyAll(func) {
-    var join = [].join;
+    var elements = [];
     for (var i = 1; i < arguments.length; i++) {
-        var elements = join.call(arguments, ', ');
+         elements.push(arguments[i]);
     }
-    return func.apply(elements);
+    return func.apply(null, elements);
 }
 
 alert( applyAll(Math.min, 2, -2, 3) ); // -2

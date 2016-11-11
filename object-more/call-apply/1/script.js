@@ -1,7 +1,5 @@
 function sumArgs() {
-    var join = [].join;
-    var elements = join.call(arguments, ', ');
-    return elements.reduce(function (a,b) {
+    return [].reduce.call(arguments, function (a,b) {
         return a+b;
     });
 }
