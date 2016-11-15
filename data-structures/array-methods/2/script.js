@@ -1,13 +1,12 @@
 function camelize(str) {
-    for (var i=0; i < str.length; i++) {
-        if (str[i] == '-') {
-            str[i+1].toUpperCase();
-            alert('Замена произошла!')
-            //delete str[i];
-        }
+    var new_str = str.split('-');
+    var new_str2 = [];
+    for (var i = 1; i < new_str.length; i++) {
+        new_str2 += new_str[i][0].toUpperCase() + new_str[i].slice(1);
     }
-    return str;
+    alert(new_str2);
+    var res = new_str[0] + new_str2;
+    return res;
 }
 
-
-alert(camelize('bere-dsd'));
+alert(camelize('bere-dsd-ere'));
