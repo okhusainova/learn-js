@@ -1,9 +1,21 @@
-var i = 10;
+// var i = 10;
+//
+// function fi() {
+//     var i = '[j.';
+//     alert(i);
+// }
+//
+// fi();
+// var i = 5;
 
-function fi() {
-    var i = '[j.';
-    alert(i);
+
+var animal = {
+    eats: true
+};
+
+function Rabbit(name) {
+    this.name = name;
+    this.__proto__ = animal;
 }
 
-fi();
-var i = 5;
+var rabbit = new Rabbit("Кроль");
